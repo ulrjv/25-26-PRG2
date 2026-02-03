@@ -9,19 +9,28 @@ public class ConversorUnidades {
         System.out.print("Tipo de conversion: ");
         int tipo = sc.nextInt();
     
-        if (t == 1) {
-            System.out.println("Conversion de longitud:");
-            System.out.println("[1] Metros a Kilometros");
-            System.out.println("[2] Kilometros a Metros");
-            System.out.println("[3] Metros a Millas");
-            System.out.println("[4] Millas a Metros");
-            System.out.println("[5] Centimetros a Pulgadas");
-            System.out.println("[6] Pulgadas a Centimetros");
-            System.out.print("Opcion: ");
-            int o = sc.nextInt();
-            System.out.print("Valor: ");
-            double v = sc.nextDouble();
+         switch (tipo) {
+            case 1:
+                System.out.println("Conversion de longitud:");
+                System.out.println("[1] M a Km\n[2] Km a M\n[3] M a Mi\n[4] Mi a M\n[5] Cm a In\n[6] In a Cm");
+                procesarConversion(sc, 1);
+                break;
+            case 2:
+                System.out.println("Conversion de peso:");
+                System.out.println("[1] Kg a G\n[2] G a Kg\n[3] Kg a Lb\n[4] Lb a Kg\n[5] G a Oz\n[6] Oz a G");
+                procesarConversion(sc, 2);
+                break;
+            case 3:
+                System.out.println("Conversion de temperatura:");
+                System.out.println("[1] C a F\n[2] F a C\n[3] C a K\n[4] K a C");
+                procesarConversion(sc, 3);
+                break;
+            default:
+                System.out.println("Tipo no valido");
+        }
+    }
 
+    
             if (o == 1) {
                 System.out.println(v + " m = " + (v / 1000) + " km");
             } else if (o == 2) {
