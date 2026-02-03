@@ -13,7 +13,7 @@ public class ConversorUnidades {
         System.out.print("Tipo de conversion: ");
         int t = sc.nextInt();
         c++;
-
+ for 
         if (t == 1) {
             System.out.println("Conversion de longitud:");
             System.out.println("[1] Metros a Kilometros");
