@@ -56,7 +56,11 @@ public class Fraccion{
         int denominador = this.denominador * otra.denominador;
         return new Fraccion(numerador, denominador);
     } 
-    public void multiplicar(Fraccion fraccion){} 
+    public Fraccion multiplicar(Fraccion otra) {
+        int numerador = this.numerador * otra.numerador;
+        int denominador = this.denominador * otra.denominador;
+        return new Fraccion(numerador, denominador);
+    } 
     public void dividir(Fraccion fraccion){} 
 
     public boolean esMayor(Fraccion fraccion){}
