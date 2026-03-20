@@ -35,7 +35,15 @@ public class Fraccion{
         return a;
     }
 
-    public void sumar(Fraccion fraccion){} 
+    public Fraccion(int numero) {
+        this.numerador = numero;
+        this.denominador = 1;
+    }
+
+    public Fraccion(Fraccion fraccion) {
+        this.numerador = fraccion.numerador;
+        this.denominador = fraccion.denominador;
+    } 
     public void restar(Fraccion fraccion){} 
     public void multiplicar(Fraccion fraccion){} 
     public void dividir(Fraccion fraccion){} 
