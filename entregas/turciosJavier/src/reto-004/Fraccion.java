@@ -1,10 +1,13 @@
 package vistas.fraccion;
 
 public class Fraccion{
-    public Fraccion(int numerador, int denominador){}
-    public Fraccion(int numero){}
-    public Fraccion(Fraccion fraccion){}
-    public Fraccion(){}
+    private final int numerador;
+    private final int denominador;
+
+    public Fraccion() {
+        this.numerador = 0;
+        this.denominador = 1;
+    }
 
     public Fraccion clonar(){}
 
