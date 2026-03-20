@@ -87,8 +87,5 @@ public class Fraccion{
         return numerador + "/" + denominador;
     }
 
-    public void invertir(){}
-    
-
 
 }
