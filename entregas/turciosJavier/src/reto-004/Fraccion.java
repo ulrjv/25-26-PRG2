@@ -67,6 +67,14 @@ public class Fraccion{
         return new Fraccion(numerador, denominador);
     }
 
+    public Fraccion inversa() {
+        return new Fraccion(this.denominador, this.numerador);
+    }
+
+    public Fraccion opuesta() {
+        return new Fraccion(-this.numerador, this.denominador);
+    }
+
     public void mostrar(){}
     public void invertir(){}
     
