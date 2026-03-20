@@ -82,6 +82,11 @@ public class Fraccion{
     public boolean equals(Fraccion otra) {
         return this.numerador == otra.numerador && this.denominador == otra.denominador;
     }
+
+    public String toString() {
+        return numerador + "/" + denominador;
+    }
+
     public void invertir(){}
     
 
