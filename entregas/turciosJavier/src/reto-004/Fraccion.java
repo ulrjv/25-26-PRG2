@@ -75,7 +75,13 @@ public class Fraccion{
         return new Fraccion(-this.numerador, this.denominador);
     }
 
-    public void mostrar(){}
+    public double toDouble() {
+        return (double) numerador / denominador;
+    }
+
+    public boolean equals(Fraccion otra) {
+        return this.numerador == otra.numerador && this.denominador == otra.denominador;
+    }
     public void invertir(){}
     
 
